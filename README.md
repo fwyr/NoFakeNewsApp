@@ -5,8 +5,13 @@ NoFakeNews is an AI-powered browser extension that detects fake news.
 Contents
 =========
 
+<<<<<<< HEAD
 * [Why?][#why]
 * [Project Status][#project-status]
+=======
+* [Why?](#why)
+* [Project Status](#project-status)
+>>>>>>> 0776204aea7741fcc6e6ff9b2ab1c3ae97241ff6
 
 
 ### Why?
@@ -18,4 +23,8 @@ Therefore, NoFakeNews was created to prevent the spreading of fake news and impr
 
 ### Project Status
 
+<<<<<<< HEAD
 NFN is extremely early in development. As such, relevant documentation and functionality may not be available. Nonetheless, development is still ongoing.
+=======
+NFN is extremely early in development. As such, relevant documentation and functionality may not be available. Nonetheless, development is still ongoing.
+>>>>>>> 0776204aea7741fcc6e6ff9b2ab1c3ae97241ff6
