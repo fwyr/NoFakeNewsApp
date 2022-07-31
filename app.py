@@ -3,8 +3,6 @@ from flask import Flask, render_template, url_for, request
 # import libraries for AI model
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
 
 import re
 import nltk
@@ -18,11 +16,6 @@ from tensorflow import keras
 from keras.layers import Dropout, Embedding, LSTM, Dense
 from keras.models import Sequential
 from keras.preprocessing.text import one_hot
-from sklearn import metrics
-from sklearn.model_selection import train_test_split
-
-import gensim 
-from gensim.models import Word2Vec
 
 
 app = Flask(__name__)
