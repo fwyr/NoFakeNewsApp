@@ -10,6 +10,10 @@ from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.corpus import wordnet
 from nltk.stem import WordNetLemmatizer
+
+nltk.download('stopwords')
+nltk.download('wordnet')
+nltk.download('omw-1.4')
  
 import tensorflow as tf
 from tensorflow import keras
@@ -30,7 +34,25 @@ def predict():
     
     if request.method == 'POST':
         message = request.form['message']
-        data = [message]
+        data = [message][0]
+
+        # preprocess text
+        data = data.lower()
+        data = data.replace('https://', ' ')
+        data = data.replace('http://', ' ')
+        data = re.sub('[^a-zA-Z0-9 ]', ' ', data)
+        data = " ".join(data.split())
+
+        stop_words = set(stopwords.words("english"))
+        lemmatizer = WordNetLemmatizer()
+
+        filtered = []
+        for word in data.split():
+            if word not in stop_words:
+                filtered.append(word)
+        
+        data = " ".join(filtered)
+        data = ["".join([lemmatizer.lemmatize(word) for word in data])]
 
         one_hot_encoded = [one_hot(text, 10000) for text in data]
         m = max([len(text) for text in one_hot_encoded])
@@ -53,7 +75,7 @@ def predict():
             verdict = "Real"
             certainty = f"{round(100 - percentage * 100, 2)}%"
         
-    return render_template('result.html', verdict=verdict, certainty=certainty, prediction=pred)
+    return render_template('result.html', verdict=verdict, certainty=certainty, prediction=pred, processed_text=data)
 
 if __name__ == '__main__':
     app.run(debug=True)
