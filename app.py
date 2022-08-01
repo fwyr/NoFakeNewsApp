@@ -1,12 +1,10 @@
 from flask import Flask, render_template, url_for, request, jsonify
 
 # import libraries for AI model
-import pandas as pd
 import numpy as np
 
 import re
 import nltk
-from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.corpus import wordnet
 from nltk.stem import WordNetLemmatizer
@@ -17,8 +15,6 @@ nltk.download('omw-1.4')
  
 import tensorflow as tf
 from tensorflow import keras
-from keras.layers import Dropout, Embedding, LSTM, Dense
-from keras.models import Sequential
 from keras.preprocessing.text import one_hot
 
 
