@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for, request
+from flask import Flask, render_template, url_for, request, jsonify
 
 # import libraries for AI model
 import pandas as pd
@@ -75,7 +75,12 @@ def predict():
             verdict = "Real"
             certainty = f"{round(100 - percentage * 100, 2)}%"
         
-    return render_template('result.html', verdict=verdict, certainty=certainty, prediction=pred, processed_text=data)
+    return jsonify({
+        "verdict": verdict,
+        "certainty": certainty,
+        "prediction": percentage,
+        "processed_text": repr(data)
+    })
 
 if __name__ == '__main__':
     app.run(debug=True)
