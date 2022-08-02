@@ -5,8 +5,8 @@ NoFakeNews is an AI-powered browser extension that detects fake news.
 Contents
 =========
 
-* [Why?][#why]
-* [Project Status][#project-status]
+* [Why?](#why)
+* [Project Status](#project-status)
 
 
 ### Why?
