@@ -64,9 +64,13 @@ def predict():
 
         verdict, certainty = 0, 0
 
-        if percentage > 0.5:
+        if percentage > 0.75:
             verdict = "Fake"
             certainty = f"{round(percentage * 100, 2)}%"
+        elif percentage > 0.5:
+            verdict = "Potentially Fake"
+        elif percentage > 0.25:
+            verdict = "Potentially Real"
         else:
             verdict = "Real"
             certainty = f"{round(100 - percentage * 100, 2)}%"
