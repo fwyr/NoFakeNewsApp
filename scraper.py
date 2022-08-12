@@ -26,5 +26,3 @@ class ContentScraper:
             self.article_text += p.text
         
         print(article_text, "\n\n")
-
-ContentScraper(url="https://www.straitstimes.com/world/europe/who-could-be-part-of-a-us-russia-prisoner-exchange")
