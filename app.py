@@ -64,19 +64,19 @@ def predict():
 
         verdict, certainty = 0, 0
 
-        if percentage > 0.75:
+        if percentage > 0.80:
             verdict = "Fake"
-            certainty = f"{round(percentage * 100, 2)}%"
-        elif percentage > 0.5:
-            verdict = "Potentially Fake"
-            certainty = f"{round(percentage * 100, 2)}%"
-        elif percentage > 0.25:
-            verdict = "Potentially Real"
-            certainty = f"{round(percentage * 100, 2)}%"
+        elif percentage > 0.60:
+            verdict = "Likely Fake"
+        elif percentage >= 0.40 and percentage <= 0.60:
+            verdict = "Unsure"
+        elif percentage > 0.20:
+            verdict = "Likely Real"
         else:
             verdict = "Real"
-            certainty = f"{round(100 - percentage * 100, 2)}%"
-        
+
+    certainty = f"{round(percentage * 100, 2)}%"
+            
     return jsonify({
         "verdict": verdict,
         "certainty": certainty,
