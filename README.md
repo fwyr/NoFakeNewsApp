@@ -1,4 +1,4 @@
-# NoFakeNews (NFN)
+# NoFakeNews (NFN) (NO LONGER IN DEVELOPMENT)
 
 NoFakeNews is an AI-powered browser extension that detects fake news.
 
@@ -9,8 +9,10 @@ This repository contains the code for the back-end parts of NoFakeNews, where we
 Contents
 =========
 
-* [Why?](#why)
-* [Project Status](#project-status)
+- [NoFakeNews (NFN) (NO LONGER IN DEVELOPMENT)](#nofakenews-nfn-no-longer-in-development)
+- [Contents](#contents)
+    - [Why?](#why)
+    - [Project Status](#project-status)
 
 
 ### Why?
@@ -22,4 +24,4 @@ Therefore, NoFakeNews was created to prevent the spreading of fake news and impr
 
 ### Project Status
 
-NFN is extremely early in development. As such, relevant documentation and functionality may not be available. Nonetheless, development is still ongoing.
+This project is no longer in development.
