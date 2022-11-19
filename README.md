@@ -1,6 +1,6 @@
-# NoFakeNews (NFN) (NO LONGER IN DEVELOPMENT)
+# REALISER (NO LONGER IN DEVELOPMENT)
 
-NoFakeNews is an AI-powered browser extension that detects fake news.
+REALISER is an AI-powered browser extension that detects fake news.
 
 This repository contains the code for the back-end parts of NoFakeNews, where we implement a NLP artificial intelligence model into a deployed Flask web application so that necessary data can be easily sent and retrieved through the browser extension.
 
