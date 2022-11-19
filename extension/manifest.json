@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "Realiser",
+    "version": "1.0",
+    "description": "Realiser is a browser extension that relies on natural language processing to weed out deceptive online news articles.",
+    "homepage_url": "https://github.com/fwyr/NoFakeNewsExt",
+    "icons": {
+        "48": "icons/border-48.png"
+    },
+    "content-scripts": [
+        {
+            "all_frames": true,
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "realiser.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "contextMenus",
+        "storage",
+        "*://*/*"
+    ]
+}
