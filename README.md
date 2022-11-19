@@ -61,6 +61,8 @@ The average accuracy score of the model across several rounds of evaluation and 
 
 Furthermore, a [web scraper](./scraper/) was built for data collection that went into the supervised training of the AI model. Websites scraped consisted of ChannelNewsAsia, The Straits Times, which serve as "real news" websites, as well as The Onion, which serves as a "fake news" website. Articles of different genres were scraped to ensure that the AI model would work with multi-genre news.
 
+The Flask web application was hosted on a free [Heroku](https://www.heroku.com/) Dyno. From 28th November 2022 onwards, free Heroku services were discontinued, which caused the original REALISER web app to be shut down.
+
 It was planned for a cloud database to be implemented so that anonymous user data and feedback could be stored securely. This would allow for the re-evaluation of the model from time to time.
 
 
