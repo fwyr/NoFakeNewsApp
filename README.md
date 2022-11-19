@@ -17,6 +17,7 @@ Beware broken, outdated, and messy code. Dwelve at your own risk.
   - [Project Details](#project-details)
     - [Front-End](#front-end)
     - [Back-End](#back-end)
+  - [Afterthoughts](#afterthoughts)
 
 
 ## Introduction
@@ -65,7 +66,10 @@ The Flask web application was hosted on a free [Heroku](https://www.heroku.com/)
 
 It was planned for a cloud database to be implemented so that anonymous user data and feedback could be stored securely. This would allow for the re-evaluation of the model from time to time.
 
+## Afterthoughts
 
- 
+This postmortem comes just under a month after the final judging stage. As it commonly and unfortunately is with competitions, developing REALISER was stressful and tiring. Many sessions, meetings, and emails were devoted to the realisation of REALISER. It would not be an exaggeration to say that REALISER had been bad for my health.
 
+Yet, if I were given the option to skip this competition entirely, I would change nothing. Participating in Splash Awards and somehow making it to the finals was an exhilirating and eye-opening experience. It helped me monumentally. I have strengthened my wield on Python with the creation of a real-world, community-changing concept, with the opportunity to grow and learn from industry experts. Although REALISER did not manage to win any significant reward, a sense of pride nonetheless reveals itself whenever I reminisce upon my accomplishments.
 
+This has been quite an interesting journey. Fake news and misinformation is still a predatory issue within a multitude of communities. In trying times like these, it would be detrimental to us as a society if falsehoods and lies were to plant and nurture seeds of doubt within the soils of our unity and solidarity. Although REALISER has been sealed away in amber, I hope that others will be able to share my vision and raise awareness for the mitigation of fake news. Let us march onwards, for a better society.
