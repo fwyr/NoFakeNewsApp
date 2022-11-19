@@ -19,7 +19,7 @@ Contents
 
 Fake news can be extremely malicious, inculcating misinformation into those who believe it. Amid the COVID-19 pandemic, fake news has spread rapidly within many communities. As more people pay attention to news, during the pandemic, the general population is more susceptible to the intake of fake news. 
 
-Therefore, NoFakeNews was created to prevent the spreading of fake news and improve the quality of social perspectives held by social citzens. 
+Therefore, REALISER was created to prevent the spreading of fake news and improve the quality of social perspectives held by social citzens. 
 
 
 ### Project Status
